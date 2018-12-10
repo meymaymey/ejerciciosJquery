@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Ejercicio 3 con Jquery</title>
+    <link real="stylesheet" type="text" href="/exemples/css/style.css">
+        <script src= "http://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    
+    <script type= "text/javascript">
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                //Escondemos el parrado con class=desaparece
+                $(".desaparece").hide();
+                    
+            });
+        });
+    </script>
+    
+    <body>
+        <h1>Encabezado</h1>
+        <div>
+            <a class="desaparece "href="https://es.stackoverflow.com/questions/60961/paso-de-variables-de-js-a-java">LINK</a>
+        </div>
+        <div>
+            <a class="desaparece "href="https://es.stackoverflow.com/questions/60961/paso-de-variables-de-js-a-java">LINK</a>
+        </div>
+        <button type="button">Botón que reemplaza</button>
+    </body>
+
+</html>

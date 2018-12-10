@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Ejercicio 2 con Jquery</title>
+    <link real="stylesheet" type="text" href="/exemples/css/style.css">
+        <script src= "http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type= "text/javascript">
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                //Escondemos el parrado con class=desaparece
+                $(".desaparece").hide();
+                    
+            });
+        });
+    </script>
+    
+    <body>
+        <h1>Encabezado</h1>
+        <li>
+            <ul class="desaparece">elemento 1</ul>
+            <ul>elemento 2</ul>
+            <ul>elemento 3</ul>
+        </li>
+
+        <button type="button">Botón que reemplaza</button>
+    </body>
+
+</html>

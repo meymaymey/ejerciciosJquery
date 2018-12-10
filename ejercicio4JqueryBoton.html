@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Ejercicio 4 con Jquery</title>
+    <link real="stylesheet" type="text" href="/exemples/css/style.css">
+        <script src= "http://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    
+    <script type= "text/javascript">
+
+        $(document).ready(function(){
+            $(".boton1").click(function(){
+                //Abrimos ventana en enlace nuevo
+                $("a[target='_blank']").hide(); //cuando pulsemon el boton1
+              
+            });
+        });
+
+        $(document).ready(function(){
+            $(".boton2").click(function(){
+                //Escondemos el parrado con class=desaparece2
+                $("a[target='_self']").hide(); //cuando pulsemon el boton2
+              
+            });
+        });
+
+    </script>
+    
+    <body>
+        <h1>Encabezado</h1>
+        <p>4. Crea un documento con dos enlaces y dos botones. 
+        Uno se tiene que abrir en una nueva ventana (target="_blank") y el otro no. Cada botón debe ocultar uno de los enlaces en función de su atributo target.
+        </p>
+        
+        <div>
+            <a target="_blank"href="https://es.stackoverflow.com/questions/60961/paso-de-variables-de-js-a-java">LINK</a>
+        </div>
+        <div>
+            <a target="_self" href="https://es.stackoverflow.com/questions/60961/paso-de-variables-de-js-a-java">LINK</a>
+        </div>
+        <div>
+            <button type="button" class="boton1">Botón que reemplaza</button>
+        </div>
+        <div>
+            <button type="button" class="boton2">Botón que reemplaza</button>
+        </div>
+    </body>
+
+</html>
