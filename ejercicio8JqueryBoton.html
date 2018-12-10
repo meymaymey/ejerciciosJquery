@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Ejercicio 8 con Jquery</title>
+    <link real="stylesheet" type="text" href="/exemples/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src= "http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style type="text/css">
+        p{
+            padding: 20px;
+        }
+        p.caracola{
+            background: blueviolet;
+        }
+    </style>
+
+    
+    <script type= "text/javascript">
+
+        $(document).ready(function(){
+            $("p").hover(function(){
+                $(this).addClass("caracola"); 
+            }, function(){
+                $(this).removeClass("caracola"); 
+            });
+        });
+
+    </script>
+    
+    <body>
+        <h1>Metodo hover()</h1>
+        <p>8. Utiliza el método hover() para lanzar un mensaje 
+            cuando nos posicionamos sobre un párrafo y otro cuando salgamos de él.</p>
+        <p>Hola</p>
+        
+    </body>
+
+</html>
