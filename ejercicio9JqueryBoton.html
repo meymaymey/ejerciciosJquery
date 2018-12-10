@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Ejercicio 9 con Jquery</title>
+    <link real="stylesheet" type="text" href="/exemples/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src= "http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style type="text/css">
+
+        label{
+            display: block;
+            margin: 5px 0;
+        }
+        label span{
+            display: none;
+        }
+        label span{
+            display: none;
+        }
+
+    </style>
+
+    
+    <script type= "text/javascript">
+
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).next("span").show().fadeOut("slow"); 
+            });
+            $("input").blur(function(){
+                $(this).css("background-color","blue");
+                });
+        }); 
+
+    </script>
+    
+    <body>
+        <h1>Metodo hover()</h1>
+        <form>
+            <label>Email: <input type="text"></label>
+            <label>Contraseña: <input type="password" class="password"></label>
+        </form>
+        
+    </body>
+
+</html>
