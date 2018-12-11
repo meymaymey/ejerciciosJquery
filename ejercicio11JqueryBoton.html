@@ -24,10 +24,11 @@
     <script type= "text/javascript">
 
         $(document).ready(function(){
-            $("#boton1").click(function(){
-                $("#a").fadeOut(); 
-                $("#b").fadeOut("slow");
-                $("#c").fadeOut(3);
+            $("div").hide(); //los div al iniciar la pagina no están
+            $("#boton1").click(function(){ //al pinchar en el boton aparecen los div cada una con la velocidad asignada entre parentesis
+                $("#a").fadeIn(); 
+                $("#b").fadeIn("slow");
+                $("#c").fadeIn(3);
             });
         
         }); 
