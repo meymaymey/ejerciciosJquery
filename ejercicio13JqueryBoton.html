@@ -24,11 +24,12 @@
     <script type= "text/javascript">
 
         $(document).ready(function(){
-            $("div").show(); //los div al iniciar la pagina no están
-            $("#boton1").click(function(){ //al pinchar en el boton aparecen los div cada una con la velocidad asignada entre parentesis
-                $("#a").fadeOut(); 
-                $("#b").fadeOut("slow");
-                $("#c").fadeOut(3);
+            $("#a").show(); //los div al iniciar la pagina no están
+            $("#b").hide();
+            $("#c").hide();
+            $("#a").click(function(){ //al pinchar en div id="a" sale b
+                $("#b").fadeIn("slow");
+                $("#c").fadeIn(3);
             });
         
         }); 
@@ -41,9 +42,7 @@
         <div id="b">Hola</div>
         <div id="c">Hola</div>
 
-        <button id="boton1">CLICK</button>
        
-        
     </body>
 
 </html>
